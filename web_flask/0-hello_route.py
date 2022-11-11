@@ -1,8 +1,17 @@
 #!/usr/bin/python3
+"""
+file: 0-hello_route.py
+desc: This module runs a simple flask app.
+Author: yoseph-desalegn
+Date Created: Nov 11, 2022
+"""
 from flask import Flask
+
 app = Flask(__name__)
 
-@app.route('/', strict_slashes=False)
+
+
+@app.route("/", strict_slashes=False)
 def hello_hbnb():
     """Displays 'Hello HBNB! from the root path"""
     return "Hello HBNB!"
