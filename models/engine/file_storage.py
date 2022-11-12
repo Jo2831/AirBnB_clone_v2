@@ -64,4 +64,6 @@ class FileStorage:
             for key in obj_dict:
                 if (obj_dict[key] == obj):
                     del obj_dict[key]
-                    break
+   def close(self):
+       self.reload()
+
