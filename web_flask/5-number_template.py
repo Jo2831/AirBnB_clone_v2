@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 written by: yoseph-desalegn
-cont:Write a script that starts a Flask web application.
+cont:Write a script that starts a Flask web application
 """
 
 from flask import Flask, render_template
