@@ -67,7 +67,5 @@ class FileStorage:
                     del obj_dict[key]
                     break
 
-
     def close(self):
-       self.reload()
-
+        self.reload()
