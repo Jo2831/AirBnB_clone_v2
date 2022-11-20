@@ -57,6 +57,7 @@ class FileStorage:
         except FileNotFoundError:
             pass
 
+
     def delete(self, obj=None):
         """ Deletes obj from __objects """
         if obj is not None:
@@ -64,6 +65,9 @@ class FileStorage:
             for key in obj_dict:
                 if (obj_dict[key] == obj):
                     del obj_dict[key]
+                    break
+
+
     def close(self):
        self.reload()
 
